@@ -34,7 +34,7 @@ function IntroInformation({
                   `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
                 )}
               >
-                Same Wrapped - new design
+                Wrapped - hello world
               </span>
             </AnimatedGradientText>
           </div>
@@ -91,7 +91,7 @@ function IntroInformation({
 
           <AdUnit adSlot="7452322179" />
 
-          <div className="p-12 rounded-xl bg-brand-dark w-full">
+          {/* <div className="p-12 rounded-xl bg-brand-dark w-full">
             <Serif>
               <h2 className="text-2xl font-bold mb-6">A quick tutorial</h2>
             </Serif>
@@ -102,9 +102,9 @@ function IntroInformation({
               allowFullScreen
               className="w-full aspect-video rounded-xl"
             ></iframe>
-          </div>
+          </div> */}
 
-          <FatHeading className="mt-12 mb-6 text-xl">
+          <FatHeading className="mt-14 mb-6 text-xl">
             Frequently Asked Questions
           </FatHeading>
           <Faq />
@@ -148,7 +148,7 @@ function IntroInformation({
               take pride in being a privacy-centered service, committed to
               protecting your data at all times.
             </p>
-            <p>
+            {/* <p>
               To provide complete transparency, we have made the full source
               code of Wrapped for TikTok available on GitHub. You can visit our
               GitHub repository at{" "}
@@ -158,7 +158,7 @@ function IntroInformation({
               to review the code and verify its integrity. We believe in
               openness and accountability, and we want our users to have full
               confidence in our platform.
-            </p>
+            </p> */}
             <p>
               Embrace the power of Wrapped for TikTok and uncover the insights
               that will propel your TikTok journey forward. Join our growing

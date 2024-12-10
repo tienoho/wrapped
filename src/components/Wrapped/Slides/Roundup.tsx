@@ -285,7 +285,7 @@ function Roundup({ statistics, persona, wrapped }: WrappedSlideProps) {
 
           <h3 className="text-xl font-bold">Liked your Wrapped?</h3>
           <a
-            href="https://buymeacoffee.com/vantezzen"
+            href="https://buymeacoffee.com/tienlv2909p"
             target="_blank"
             rel="noopener noreferrer"
           >

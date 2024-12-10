@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 function AdUnit({
-  adClient = "ca-pub-8508732166185621",
+  adClient = "ca-pub-2897522586959089",
   adSlot,
   adFormat = "auto",
 }: {

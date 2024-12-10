@@ -1,7 +1,7 @@
 import Script from "next/script";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,30 +27,18 @@ export default function RootLayout({
       <body className={`${inter.className} w-screen min-h-screen`}>
         {children}
 
-        <Script
-          src="https://scripts.simpleanalyticscdn.com/latest.js"
-          data-collect-dnt="true"
-        />
-        <noscript>
-          {/* eslint-disable @next/next/no-img-element */}
-          <img
-            src="https://queue.simpleanalyticscdn.com/noscript.gif"
-            alt=""
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </noscript>
-        <Script
+        {/* <Script
           data-domain="wrapped.vantezzen.io"
           src="https://a.vantezzen.io/js/script.tagged-events.js"
-        />
+        /> */}
 
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8508732166185621"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2897522586959089"
           crossOrigin="anonymous"
         ></Script>
 
-        <GoogleAnalytics gaId="G-9C99MWZ0PM" />
+        {/* <GoogleAnalytics gaId="G-9C99MWZ0PM" /> */}
 
         <script dangerouslySetInnerHTML={{ __html: PLAUSIBLE_EVENTS }}></script>
       </body>

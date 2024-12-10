@@ -1,0 +1,20 @@
+services:
+  wrapped_tiktok:
+    image: wrapped_tiktok
+    build:
+      context: . # Thư mục chứa Dockerfile
+      dockerfile: Dockerfile # Tên của Dockerfile (nếu khác tên mặc định, có thể chỉ định tên khác)
+    container_name: wrapped_tiktok
+    ports:
+      - "3000:3000" # ánh xạ cổng host:container (tùy theo ứng dụng của bạn)
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+    networks:
+      - wrapped_tiktok-network
+
+networks:
+  wrapped_tiktok-network:
+    driver: bridge # Định nghĩa mạng bridge (có thể dùng mạng mặc định hoặc chỉ định mạng)
